@@ -1,0 +1,39 @@
+{
+  "main": "expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "~51.0.28",
+    "expo-status-bar": "~1.12.1",
+    "react": "18.2.0",
+    "react-native": "0.74.5",
+    "react-native-paper": "4.9.2",
+    "@expo/vector-icons": "^14.0.2",
+    "axios": "*",
+    "@google/generative-ai": "*",
+    "react-native-gifted-chat": "*",
+    "react-native-image-picker": "*",
+    "react-native-vector-icons": "*",
+    "react-native-markdown-display": "*",
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "react-native-typing-animation": "*",
+    "prop-types": "*",
+    "react-native-svg": "15.2.0",
+    "react-native-tts": "*",
+    "react-native-gesture-handler": "~2.16.1",
+    "@react-navigation/native": "*",
+    "@react-navigation/stack": "*",
+    "react-native-screens": "3.31.1",
+    "react-native-safe-area-context": "4.10.5",
+    "react-native-voice": "*",
+    "buffer": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}
