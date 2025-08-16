@@ -16,5 +16,6 @@ function getEnv(key, defaultValue) {
 
 export const env = {
     NODE_ENV: getEnv("NODE_ENV", "development"),
-    PORT: getEnv("PORT", 5000)
+    PORT: getEnv("PORT", 5000),
+    MONGODB_URL: getEnv("MONGODB_URL", "mongodb://localhost:27017/newdatabase")
 }
