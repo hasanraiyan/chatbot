@@ -1,5 +1,8 @@
 import { app } from "./server.js";
+import { env } from "./utils/env.js";
 
-app.listen(8000, ()=>{
-    console.log(`App is running as http://localhost:8000`)
+const PORT = env.PORT;
+
+app.listen(PORT, ()=>{
+    console.log(`App is running as http://localhost:${PORT}`)
 })
