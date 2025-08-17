@@ -1,5 +1,5 @@
 import ApiError from "../utils/ApiError.js";
-
+import logger from "../config/logger.js";
 const errorHandler = (err, req, res, next) => {
     if (err instanceof ApiError) {
         return res.status(err.statusCode).json({
@@ -10,7 +10,7 @@ const errorHandler = (err, req, res, next) => {
         });
     }
 
-    console.error(err);
+    logger.error(err);
 
 
     // Send generic 500 internal server Error response to the client

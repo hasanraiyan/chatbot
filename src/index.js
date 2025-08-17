@@ -1,6 +1,7 @@
 import { app } from "./server.js";
 import { env } from "./utils/env.js";
 import connectDB from "./config/db.js";
+import logger from "./config/logger.js";
 
 const PORT = env.PORT;
 
@@ -10,11 +11,11 @@ const PORT = env.PORT;
 connectDB()
     .then(() => {
         app.listen(PORT, () => {
-            console.log(`App is running as http://localhost:${PORT}`)
+            logger.info(`App is running as http://localhost:${PORT}`)
         })
     })
     .catch((err) => {
-        console.error(`Failed to connect to the database: ${err}`)
+        logger.info(`Failed to connect to the database: ${err}`)
     })
 
 
